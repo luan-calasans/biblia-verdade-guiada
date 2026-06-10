@@ -3,7 +3,7 @@ import { join } from 'node:path';
 
 const docsDir = join(process.cwd(), 'docs');
 const indexPath = join(docsDir, 'index.html');
-const pathSegmentsToKeep = 1; // /bible-reader/
+const pathSegmentsToKeep = 1; // /biblia-verdade-guiada/
 
 const spaRedirectScript = `<script type="text/javascript">
 (function(l) {

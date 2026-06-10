@@ -240,8 +240,13 @@ class ChatbotService {
     message: string,
     conversationHistory: ChatMessage[]
   ): Promise<string> {
-    const apiKey =
-      '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';
+    const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
+
+    if (!apiKey) {
+      throw new Error(
+        'Chave da API OpenAI não configurada. Defina VITE_OPENAI_API_KEY no ambiente de build.'
+      );
+    }
 
     // Contexto do pastor evangélico
     const systemPrompt = `Você é um pastor evangélico experiente com 80 anos de ministério e profundo conhecimento bíblico. 

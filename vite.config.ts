@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 import { componentTagger } from 'lovable-tagger';
 
-// GitHub Pages: https://luan-calasans.github.io/bible-reader/
+// GitHub Pages: https://luan-calasans.github.io/biblia-verdade-guiada/
 // Para domínio customizado na raiz, defina VITE_BASE_PATH=/ no .env.production
-const GITHUB_PAGES_BASE = '/bible-reader/';
+const GITHUB_PAGES_BASE = '/biblia-verdade-guiada/';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
