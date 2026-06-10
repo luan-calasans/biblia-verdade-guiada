@@ -1,0 +1,57 @@
+# https://www.robotstxt.org/robotstxt.html
+
+# Robots.txt com medidas de segurança
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /config/
+Disallow: /.env
+Disallow: /.git/
+Disallow: /logs/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /backup/
+Disallow: /cache/
+Disallow: /*?*utm_source=
+Disallow: /*?*utm_medium=
+Disallow: /*?*utm_campaign=
+Disallow: /*sessionid=
+Disallow: /*sid=
+Disallow: /*token=
+
+# Arquivos sensíveis
+Disallow: *.sql
+Disallow: *.log
+Disallow: *.bak
+Disallow: *.old
+Disallow: *.conf
+Disallow: *.config
+Disallow: *.ini
+Disallow: *.env
+
+# Sitemap
+Sitemap: https://biblia.gracaeleitura.com/sitemap.xml
+
+# Crawl-delay para bots
+Crawl-delay: 1
+
+# Regras específicas para cada bot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 1
+
+# Diretórios que não devem ser indexados
+Disallow: /private/

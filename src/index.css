@@ -1,0 +1,460 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom Bible app colors - Light theme */
+    --bible-soft-green: 83 54% 93%;
+    --bible-white: 0 0% 100%;
+    --bible-gray: 0 0% 95%;
+    --bible-text: 0 0% 29%;
+    --bible-accent: 88 50% 53%;
+
+    /* Custom green color #8bc34b */
+    --custom-green: 88 50% 53%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+
+    --sidebar-background: 220 13% 12%;
+    --sidebar-foreground: 220 9% 55%;
+    --sidebar-primary: 224 71% 4%;
+    --sidebar-primary-foreground: 210 20% 98%;
+    --sidebar-accent: 216 12% 84%;
+    --sidebar-accent-foreground: 220 9% 55%;
+    --sidebar-border: 217 10% 25%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom Bible app colors - Dark theme */
+    --bible-soft-green: 220 15% 15%;
+    --bible-white: 222.2 84% 4.9%;
+    --bible-gray: 217.2 32.6% 17.5%;
+    --bible-text: 210 40% 90%;
+    --bible-accent: 88 50% 53%;
+
+    /* Custom green color #8bc34b */
+    --custom-green: 88 50% 53%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  /* Custom Bible app styling */
+  .bible-container {
+    @apply max-w-5xl mx-auto px-4 md:px-6 py-4 animate-fade-in;
+  }
+
+  .page-transition {
+    @apply transition-opacity duration-300;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+
+  /* Overflow and responsive utilities */
+  .overflow-safe {
+    @apply overflow-hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .container-responsive {
+    @apply w-full max-w-full;
+    box-sizing: border-box;
+  }
+
+  .flex-responsive {
+    @apply flex flex-wrap;
+    min-width: 0; /* Prevent flex items from overflowing */
+  }
+
+  .canvas-responsive {
+    @apply max-w-full h-auto block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Mobile-specific improvements */
+  .mobile-card {
+    @apply rounded-lg overflow-hidden;
+  }
+
+  .mobile-button {
+    @apply flex items-center justify-center;
+    min-height: 44px; /* Better touch targets for mobile */
+  }
+
+  .mobile-text {
+    @apply leading-relaxed;
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+  }
+
+  /* Better mobile spacing */
+  .mobile-spacing {
+    @apply space-y-3;
+  }
+
+  @media (min-width: 640px) {
+    .mobile-spacing {
+      @apply space-y-4;
+    }
+  }
+
+  /* Touch-friendly scrollbars on mobile */
+  @media (max-width: 640px) {
+    .scrollbar-thin {
+      scrollbar-width: thin;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+/* High Contrast Mode */
+.high-contrast {
+  --bible-text: #000000;
+  --bible-background: #ffffff;
+  --bible-accent: #0000ff;
+  --bible-soft-green: #e0e0e0;
+  --bible-gray: #808080;
+  --bible-white: #ffffff;
+}
+
+.high-contrast * {
+  color: var(--bible-text) !important;
+  background-color: var(--bible-background) !important;
+  border-color: var(--bible-text) !important;
+}
+
+.high-contrast .bg-bible-accent {
+  background-color: var(--bible-accent) !important;
+  color: var(--bible-white) !important;
+}
+
+.high-contrast .bg-bible-soft-green {
+  background-color: var(--bible-soft-green) !important;
+}
+
+.high-contrast .text-bible-accent {
+  color: var(--bible-accent) !important;
+}
+
+.high-contrast .border-bible-gray {
+  border-color: var(--bible-gray) !important;
+}
+
+/* Link Highlight Mode */
+.link-highlight {
+  --link-highlight-color: #000000;
+}
+
+.link-highlight a,
+.link-highlight button,
+.link-highlight [role='button'],
+.link-highlight [role='link'],
+.link-highlight .cursor-pointer {
+  outline: 2px solid var(--link-highlight-color, #000000) !important;
+  outline-offset: 2px !important;
+  border-radius: 4px !important;
+}
+
+.link-highlight a:hover,
+.link-highlight button:hover,
+.link-highlight [role='button']:hover,
+.link-highlight [role='link']:hover,
+.link-highlight .cursor-pointer:hover {
+  outline: 3px solid var(--link-highlight-color, #000000) !important;
+  outline-offset: 3px !important;
+}
+
+/* Dark mode link highlights */
+html.dark .link-highlight a,
+html.dark .link-highlight button,
+html.dark .link-highlight [role='button'],
+html.dark .link-highlight [role='link'],
+html.dark .link-highlight .cursor-pointer {
+  outline: 2px solid #ffffff !important;
+  outline-offset: 2px !important;
+  border-radius: 4px !important;
+}
+
+html.dark .link-highlight a:hover,
+html.dark .link-highlight button:hover,
+html.dark .link-highlight [role='button']:hover,
+html.dark .link-highlight [role='link']:hover,
+html.dark .link-highlight .cursor-pointer:hover {
+  outline: 3px solid #ffffff !important;
+  outline-offset: 3px !important;
+}
+
+/* Custom Line Spacing */
+.custom-line-spacing {
+  --line-spacing: 1.5;
+}
+
+.custom-line-spacing p,
+.custom-line-spacing div,
+.custom-line-spacing span,
+.custom-line-spacing li,
+.custom-line-spacing h1,
+.custom-line-spacing h2,
+.custom-line-spacing h3,
+.custom-line-spacing h4,
+.custom-line-spacing h5,
+.custom-line-spacing h6,
+.custom-line-spacing td,
+.custom-line-spacing th,
+.custom-line-spacing label,
+.custom-line-spacing button,
+.custom-line-spacing a {
+  line-height: var(--line-spacing) !important;
+}
+
+/* Animations */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.3s ease-out;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* Mobile Menu Animations */
+@keyframes slide-in-from-top-full {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out-to-top-full {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out-0 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.animate-in {
+  animation-fill-mode: both;
+}
+
+.animate-out {
+  animation-fill-mode: both;
+}
+
+.fade-in-0 {
+  animation-name: fade-in;
+}
+
+.fade-out-0 {
+  animation-name: fade-out-0;
+}
+
+.slide-in-from-top-full {
+  animation-name: slide-in-from-top-full;
+}
+
+.slide-out-to-top-full {
+  animation-name: slide-out-to-top-full;
+}
+
+.duration-300 {
+  animation-duration: 300ms;
+}
+
+.duration-500 {
+  animation-duration: 500ms;
+}
+
+.ease-out {
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Custom Scrollbar Styles */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thumb-gray-300::-webkit-scrollbar-thumb {
+  background-color: rgb(209 213 219);
+  border-radius: 3px;
+}
+
+.scrollbar-track-gray-100::-webkit-scrollbar-track {
+  background-color: rgb(243 244 246);
+}
+
+.hover\:scrollbar-thumb-gray-400:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(156 163 175);
+}
+
+/* Dark mode scrollbar fixes */
+.dark .scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgb(31 41 55);
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgb(75 85 99);
+  border-radius: 3px;
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-track {
+  background-color: rgb(31 41 55);
+}
+
+.dark .scrollbar-thin:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(107 114 128);
+}
+
+.dark .scrollbar-thumb-gray-600::-webkit-scrollbar-thumb {
+  background-color: rgb(75 85 99);
+}
+
+.dark .scrollbar-track-gray-800::-webkit-scrollbar-track {
+  background-color: rgb(31 41 55);
+}

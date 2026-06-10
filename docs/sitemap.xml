@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://biblia.gracaeleitura.com/</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Graça e Leitura - Plataforma Completa para Estudo Bíblico</image:caption>
+      <image:title>Plataforma de Estudo Bíblico - Graça e Leitura</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/dashboard</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Dashboard - Painel de Controle do Usuário</image:caption>
+      <image:title>Dashboard Pessoal - Graça e Leitura</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/planos</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Gerador de Planos de Leitura Bíblica Personalizados</image:caption>
+      <image:title>Crie seu Plano de Leitura Bíblica Personalizado</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/planos/pre-prontos</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Planos de Leitura Pré-Prontos - Cronogramas Organizados</image:caption>
+      <image:title>Planos de Leitura Bíblica Pré-Definidos</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/planos/1-mes</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Plano de Leitura Bíblica de 1 Mês - Cronograma Mensal</image:caption>
+      <image:title>Plano de Leitura Bíblica de 30 Dias</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/planos/3-meses</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Plano de Leitura Bíblica de 3 Meses - Cronograma Trimestral</image:caption>
+      <image:title>Plano de Leitura Bíblica de 90 Dias</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/planos/6-meses</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Plano de Leitura Bíblica de 6 Meses - Cronograma Semestral</image:caption>
+      <image:title>Plano de Leitura Bíblica de 180 Dias</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/planos/1-ano</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Plano de Leitura Bíblica de 1 Ano - Cronograma Anual</image:caption>
+      <image:title>Plano de Leitura Bíblica de 365 Dias</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/plano</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Gerador de Planos de Leitura Bíblica (Redirecionamento)</image:caption>
+      <image:title>Crie seu Plano de Leitura Bíblica</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/versiculo-do-dia</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Versículo do Dia - Inspiração Diária das Escrituras</image:caption>
+      <image:title>Versículo Diário para Reflexão e Meditação</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/sobre</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Sobre o Projeto - Por que Estudar a Bíblia</image:caption>
+      <image:title>Conheça Melhor o Projeto Graça e Leitura</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/por-que-estudar</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Por que Estudar a Bíblia - Importância do Estudo das Escrituras</image:caption>
+      <image:title>A Importância do Estudo Bíblico na Vida Cristã</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/memorizacao</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Sistema de Memorização de Versículos com Repetição Espaçada</image:caption>
+      <image:title>Memorize Versículos Bíblicos Eficientemente</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/quiz</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Quiz Bíblico Interativo - Teste seus Conhecimentos das Escrituras</image:caption>
+      <image:title>Quiz Bíblico com Perguntas sobre Toda a Bíblia</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/pesquisa</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Pesquisa de Versículos Bíblicos por Palavras-chave com Filtros Avançados</image:caption>
+      <image:title>Busca Avançada de Versículos na Bíblia NVI</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/leitura</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Leitura Interativa da Bíblia com Formatação Avançada</image:caption>
+      <image:title>Leia a Bíblia com Ferramentas de Formatação e Cores</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/notas</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Sistema de Notas Bíblicas - Organize seus Estudos</image:caption>
+      <image:title>Crie e Gerencie suas Notas de Estudo Bíblico</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/chatbot</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Chatbot Bíblico - Assistente Virtual para Estudos</image:caption>
+      <image:title>Converse com o Assistente Bíblico Inteligente</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/linha-do-tempo</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Linha do Tempo Bíblica - Cronologia dos Eventos</image:caption>
+      <image:title>Explore a Cronologia dos Eventos Bíblicos</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/acompanhamento</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Acompanhamento Espiritual - Monitore seu Crescimento na Fé</image:caption>
+      <image:title>Sistema Completo de Acompanhamento Espiritual</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/perfil</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Perfil do Usuário - Gerencie sua Conta</image:caption>
+      <image:title>Perfil e Configurações da Conta</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/configuracoes</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Configurações - Personalize sua Experiência</image:caption>
+      <image:title>Configurações e Preferências do Usuário</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/login</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Login - Acesse sua Conta para Salvar Progresso</image:caption>
+      <image:title>Faça Login na Plataforma Graça e Leitura</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/esqueci-senha</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Esqueci Minha Senha - Recuperação de Conta</image:caption>
+      <image:title>Recuperar Senha da Conta</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/redefinir-senha</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Redefinir Senha - Alterar Senha da Conta</image:caption>
+      <image:title>Redefinir Senha da Conta</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/imagens</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Galeria de Acontecimentos Bíblicos - Experiência Visual</image:caption>
+      <image:title>Explore a Galeria de Acontecimentos Bíblicos</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/doacao</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Apoie o Projeto - Ajude a Manter a Plataforma Gratuita</image:caption>
+      <image:title>Faça uma Doação para o Projeto Graça e Leitura</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biblia.gracaeleitura.com/privacidade</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <image:image>
+      <image:loc>https://biblia.gracaeleitura.com/seo.png</image:loc>
+      <image:caption>Política de Privacidade - Proteção de Dados Pessoais</image:caption>
+      <image:title>Política de Privacidade do Graça e Leitura</image:title>
+    </image:image>
+  </url>
+</urlset> 
