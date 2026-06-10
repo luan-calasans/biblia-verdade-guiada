@@ -19,6 +19,4 @@ export const ROUTES = {
   privacy: '/privacy',
   quiz: '/quiz',
   memorization: '/memorization',
-  login: '/login',
-  forgotPassword: '/forgot-password',
 } as const;

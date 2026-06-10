@@ -9,7 +9,6 @@ import { Separator } from '@/components/ui/separator';
 import {
   BookOpen,
   Brain,
-  TrendingUp,
   Heart,
   Calendar,
   Target,
@@ -27,17 +26,12 @@ import {
   Award,
   MessageCircle,
   Search,
-  Edit3,
   Eye,
-  BarChart3,
   Trophy,
   Lightbulb,
   BookMarked,
   Sparkles,
   Home,
-  User,
-  Lock,
-  Unlock,
   Plus,
   Minus,
 } from 'lucide-react';
@@ -71,30 +65,6 @@ const LandingPage: React.FC = () => {
       ],
     },
     {
-      icon: <TrendingUp className='h-8 w-8' />,
-      title: 'Quiz Bíblico Interativo',
-      description:
-        'Teste seu conhecimento bíblico com quizzes dinâmicos e acompanhe seu progresso.',
-      benefits: [
-        'Múltiplas categorias',
-        'Diferentes níveis',
-        'Ranking de pontuação',
-        'Análise de performance',
-      ],
-    },
-    {
-      icon: <BarChart3 className='h-8 w-8' />,
-      title: 'Acompanhamento Espiritual',
-      description:
-        'Monitore seu crescimento espiritual com métricas e relatórios detalhados.',
-      benefits: [
-        'Dashboard personalizado',
-        'Metas espirituais',
-        'Relatórios semanais',
-        'Histórico de progresso',
-      ],
-    },
-    {
       icon: <Search className='h-8 w-8' />,
       title: 'Pesquisa Avançada',
       description:
@@ -104,18 +74,6 @@ const LandingPage: React.FC = () => {
         'Filtros por livro/capítulo',
         'Histórico de pesquisas',
         'Resultados instantâneos',
-      ],
-    },
-    {
-      icon: <Edit3 className='h-8 w-8' />,
-      title: 'Sistema de Notas',
-      description:
-        'Anote suas reflexões, insights e estudos bíblicos com organização inteligente.',
-      benefits: [
-        'Notas por versículo',
-        'Categorização automática',
-        'Exportação de notas',
-        'Sincronização em nuvem',
       ],
     },
     {
@@ -205,16 +163,6 @@ const LandingPage: React.FC = () => {
                     Começar Agora
                   </Button>
                 </Link>
-                <Link to={ROUTES.login} className='w-full sm:w-auto'>
-                  <Button
-                    variant='outline'
-                    size='lg'
-                    className='border-bible-accent text-bible-accent hover:bg-bible-accent/10 px-6 sm:px-8 py-3 text-base sm:text-lg w-full sm:w-auto'
-                  >
-                    <User className='h-4 w-4 sm:h-5 sm:w-5 mr-2' />
-                    Fazer Login
-                  </Button>
-                </Link>
               </div>
             </div>
           </div>
@@ -288,11 +236,11 @@ const LandingPage: React.FC = () => {
                   1
                 </div>
                 <h3 className='text-lg sm:text-xl font-semibold text-bible-text mb-3 sm:mb-4'>
-                  Crie Sua Conta
+                  Acesse o Site
                 </h3>
                 <p className='text-sm sm:text-base text-bible-text/70'>
-                  Registre-se gratuitamente e personalize seu perfil espiritual
-                  com seus objetivos e preferências.
+                  Acesse o Graça e Leitura gratuitamente, sem necessidade de
+                  cadastro ou login.
                 </p>
               </div>
 
@@ -500,16 +448,6 @@ const LandingPage: React.FC = () => {
                 >
                   <Play className='h-4 w-4 sm:h-5 sm:w-5 mr-2' />
                   Começar Gratuitamente
-                </Button>
-              </Link>
-              <Link to={ROUTES.login} className='w-full sm:w-auto'>
-                <Button
-                  variant='outline'
-                  size='lg'
-                  className='border-white text-bible-accent hover:bg-white/10 px-6 sm:px-8 py-3 text-base sm:text-lg w-full sm:w-auto'
-                >
-                  <User className='h-4 w-4 sm:h-5 sm:w-5 mr-2' />
-                  Já Tenho Conta
                 </Button>
               </Link>
             </div>
