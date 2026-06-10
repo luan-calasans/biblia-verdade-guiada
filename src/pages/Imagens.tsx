@@ -27,6 +27,7 @@ import {
   Share2,
   Video,
 } from 'lucide-react';
+import { publicAsset } from '@/lib/publicAsset';
 
 // Hook para detectar dispositivo móvel
 const useIsMobile = () => {
@@ -113,8 +114,12 @@ const Imagens: React.FC = () => {
       | 'templo_salomao_fora'
       | 'templo_salomao_dentro'
   ) => {
+    const resolveImages = (paths: string[]) =>
+      paths.map((path) => publicAsset(path));
+
     if (eventType === 'babel') {
-      return isMobileDevice
+      return resolveImages(
+        isMobileDevice
         ? [
             '/imgs/babel/01_FB_BS_Tower_Babel_Thumbnail.jpg',
             '/imgs/babel/02_FB_BS_Tower_Babel_Thumbnail.jpg',
@@ -136,9 +141,11 @@ const Imagens: React.FC = () => {
             '/imgs/babel/07_FB_BS_Tower_Babel_1920.jpg',
             '/imgs/babel/08_FB_BS_Tower_Babel_1920.jpg',
             '/imgs/babel/09_FB_BS_Tower_Babel_1920.jpg',
-          ];
+          ]
+      );
     } else if (eventType === 'noah') {
-      return isMobileDevice
+      return resolveImages(
+        isMobileDevice
         ? [
             '/imgs/arca_noe/01_FB_BS_Noah_Ark_1024.jpg',
             '/imgs/arca_noe/02_FB_BS_Noah_Ark_1024.jpg',
@@ -170,9 +177,11 @@ const Imagens: React.FC = () => {
             '/imgs/arca_noe/12_FB_BS_Noah_Ark_1920.jpg',
             '/imgs/arca_noe/13_FB_BS_Noah_Ark_1920.jpg',
             '/imgs/arca_noe/14_FB_BS_Noah_Ark_1920.jpg',
-          ];
+          ]
+      );
     } else if (eventType === 'mene') {
-      return isMobileDevice
+      return resolveImages(
+        isMobileDevice
         ? [
             '/imgs/mene_mene/01_FB_BS_Writing_Wall_1024.jpg',
             '/imgs/mene_mene/02_FB_BS_Writing_Wall_1024.jpg',
@@ -208,9 +217,11 @@ const Imagens: React.FC = () => {
             '/imgs/mene_mene/14_FB_BS_Writing_Wall_1920.jpg',
             '/imgs/mene_mene/15_FB_BS_Writing_Wall_1920.jpg',
             '/imgs/mene_mene/16_FB_BS_Writing_Wall_1920.jpg',
-          ];
+          ]
+      );
     } else if (eventType === 'jesus') {
-      return isMobileDevice
+      return resolveImages(
+        isMobileDevice
         ? [
             '/imgs/jesus/01_FB_BS_Jesus_Crucified_1024.jpg',
             '/imgs/jesus/02_FB_BS_Jesus_Crucified_1024.jpg',
@@ -252,9 +263,11 @@ const Imagens: React.FC = () => {
             '/imgs/jesus/17_FB_BS_Jesus_Crucified_1920.jpg',
             '/imgs/jesus/18_FB_BS_Jesus_Crucified_1920.jpg',
             '/imgs/jesus/19_FB_BS_Jesus_Crucified_1920.jpg',
-          ];
+          ]
+      );
     } else if (eventType === 'nabucodonosor') {
-      return isMobileDevice
+      return resolveImages(
+        isMobileDevice
         ? [
             '/imgs/nabucodonosor/01_FB_BS_Nebuchadnezzar_Statue_1024.jpg',
             '/imgs/nabucodonosor/02_FB_BS_Nebuchadnezzar_Statue_1024.jpg',
@@ -288,9 +301,11 @@ const Imagens: React.FC = () => {
             '/imgs/nabucodonosor/13_FB_BS_Nebuchadnezzar_Statue_1920.jpg',
             '/imgs/nabucodonosor/14_FB_BS_Nebuchadnezzar_Statue_1920.jpg',
             '/imgs/nabucodonosor/15_FB_BS_Nebuchadnezzar_Statue_1920.jpg',
-          ];
+          ]
+      );
     } else if (eventType === 'tabernaculo') {
-      return isMobileDevice
+      return resolveImages(
+        isMobileDevice
         ? [
             '/imgs/tabernaculo/01_FB_BS_Tabernacle_Walkthrough_1024.jpg',
             '/imgs/tabernaculo/02_FB_BS_Tabernacle_Walkthrough_1024.jpg',
@@ -324,9 +339,11 @@ const Imagens: React.FC = () => {
             '/imgs/tabernaculo/13_FB_BS_Tabernacle_Walkthrough_1920.jpg',
             '/imgs/tabernaculo/14_FB_BS_Tabernacle_Walkthrough_1920.jpg',
             '/imgs/tabernaculo/15_FB_BS_Tabernacle_Walkthrough_1920.jpg',
-          ];
+          ]
+      );
     } else if (eventType === 'templo_salomao_fora') {
-      return isMobileDevice
+      return resolveImages(
+        isMobileDevice
         ? [
             '/imgs/templo_salomao_fora/01_FB_BS_Solomon_Temple_Outer_1024.jpg',
             '/imgs/templo_salomao_fora/02_FB_BS_Solomon_Temple_Outer_1024.jpg',
@@ -356,9 +373,11 @@ const Imagens: React.FC = () => {
             '/imgs/templo_salomao_fora/11_FB_BS_Solomon_Temple_Outer_1920.jpg',
             '/imgs/templo_salomao_fora/12_FB_BS_Solomon_Temple_Outer_1920.jpg',
             '/imgs/templo_salomao_fora/13_FB_BS_Solomon_Temple_Outer_1920.jpg',
-          ];
+          ]
+      );
     } else if (eventType === 'templo_salomao_dentro') {
-      return isMobileDevice
+      return resolveImages(
+        isMobileDevice
         ? [
             '/imgs/templo_salomao_dentro/01_FB_BS_Solomon_Temple_Inner_1024.jpg',
             '/imgs/templo_salomao_dentro/02_FB_BS_Solomon_Temple_Inner_1024.jpg',
@@ -384,7 +403,8 @@ const Imagens: React.FC = () => {
             '/imgs/templo_salomao_dentro/09_FB_BS_Solomon_Temple_Inner_1920.jpg',
             '/imgs/templo_salomao_dentro/10_FB_BS_Solomon_Temple_Inner_1920.jpg',
             '/imgs/templo_salomao_dentro/11_FB_BS_Solomon_Temple_Inner_1920.jpg',
-          ];
+          ]
+      );
     }
     return [];
   };
@@ -604,7 +624,16 @@ const Imagens: React.FC = () => {
           'Todos os israelitas poderiam entrar no pátio do templo para levar sacrifícios ao altar, mas isso é o mais perto que eles poderiam ir. Somente os sacerdotes podiam passar pelas portas douradas do templo para o Santo Lugar e somente o sumo sacerdote podia entrar no Santo dos Santos uma vez por ano, no Dia da Expiação. Ele só poderia entrar após oferecer um sacrifício por seus próprios pecados e depois levar ali o sangue expiatório pelos pecados do povo.\n\nO Santo Lugar tinha 40 côvados de comprimento (aproximadamente 20m). Um côvado sendo a medida do cotovelo de um homem até a ponta de seu dedo médio - cerca de 45 cm (18 polegadas). Sua largura era de 20 côvados (10m).\n\nO Santo Lugar tinha 30 côvados (15m) de altura, com janelas no lado leste acima da entrada.\n\nNa parte de trás do templo, na extremidade oeste, em um piso elevado, escondido da vista, havia uma sala de 20 côvados de comprimento, 20 de largura e 20 de altura (aproximadamente 10m²). Era conhecido como o "Lugar Santíssimo" ou "Santo dos Santos". Não tinha janelas. À frente desta sala elevada havia degraus revestidos com ouro. O Santo dos Santos era pavimentado e revestido com cedro do Líbano que eram revestidos com 20 toneladas métricas de ouro.\n\nAs portas de entrada de duas folhas para o Santo Lugar e Santo dos Santos foram feitas de madeira de oliveira esculpida com querubins, palmeiras e flores, revestidas com ouro.\n\nAs paredes do Santo Lugar foram forradas com cedro, sobre as quais foram esculpidas figuras de querubins, palmeiras e flores abertas, todas revestidas com ouro.\n\nNo tabernáculo havia uma peça de 7 velas ramificadas, conhecida como "menorá". No Templo de Salomão havia 5 de cada lado do Santo Lugar, perfazendo 10 no total.\n\nNo lado oeste do Santo Lugar estava a mesa para o Pão da Proposição (também chamado de Pão de Exposição). A mesa era feita de ouro e sobre ela havia doze pães, um para cada tribo de Israel. Pães frescos eram colocados na mesa todo sábado em duas pilhas de seis.\n\nDe pé diante do Santo dos Santos estava um altar dourado usado para ofertas de incenso. A fumaça do incenso queimado simbolizava as orações que se elevavam para Deus.\n\nAlém da porta dourada (1 Reis 6:31-32) entre o Santo Lugar e o Santo dos Santos o sumo sacerdote precisava passar por um véu grosso (Crônicas 3:14 ) feito de tecidos azuis, púrpura e carmesim e linho finamente torcido, com querubins habilmente trabalhados nele.\n\nDentro do Santo dos Santos estava a Arca da Aliança. (Para mais detalhes, veja o conjunto de imagens 3D na Arca da Aliança).',
       },
     ];
-    setBiblicalEvents(events);
+    setBiblicalEvents(
+      events.map((event) => ({
+        ...event,
+        videoUrl: publicAsset(event.videoUrl),
+        videos: event.videos?.map((video) => ({
+          ...video,
+          url: publicAsset(video.url),
+        })),
+      }))
+    );
   }, [isMobile]);
 
   // useEffect separado para atualizar o selectedEvent quando o dispositivo mudar
