@@ -18,6 +18,7 @@ import {
   getVersionFullName,
 } from '@/utils/bibleVersionsMap';
 import { useCache } from '@/contexts/ThemeContext';
+import { toast } from 'sonner';
 
 // Interface para o versículo normalizado
 interface Verse {
@@ -204,7 +205,10 @@ const VerseOfTheDay = () => {
 
     try {
       await navigator.clipboard.writeText(verseText);
-    } catch (error) {}
+      toast.success('Versículo copiado!');
+    } catch (error) {
+      toast.error('Não foi possível copiar o versículo.');
+    }
   };
 
   // Formata a data atual em "segunda-feira, 1 de janeiro de 2023"
