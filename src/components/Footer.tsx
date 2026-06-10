@@ -111,7 +111,7 @@ const Footer = () => {
             <h3 className='text-sm font-semibold text-bible-text'>Contato</h3>
             <div className='flex flex-col space-y-2'>
               <a
-                href='mailto:contato@gracaeleitura.com'
+                href='mailto:luancalasans.site@gmail.com'
                 className='text-sm text-bible-text/70 hover:text-bible-accent transition-colors flex items-center gap-1 justify-center md:justify-start'
               >
                 <Mail className='w-3 h-3' />

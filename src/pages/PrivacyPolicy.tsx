@@ -433,10 +433,10 @@ const PrivacyPolicy = () => {
                   <strong>Como exercer seus direitos:</strong> Entre em contato
                   conosco através do email{' '}
                   <a
-                    href='mailto:contato@gracaeleitura.com'
+                    href='mailto:luancalasans.site@gmail.com'
                     className='text-bible-accent hover:underline'
                   >
-                    contato@gracaeleitura.com
+                    luancalasans.site@gmail.com
                   </a>{' '}
                   ou utilize as funcionalidades de exportação/exclusão
                   disponíveis na plataforma.
@@ -562,10 +562,10 @@ const PrivacyPolicy = () => {
                   <p className='text-bible-text'>
                     <strong>Email:</strong>{' '}
                     <a
-                      href='mailto:contato@gracaeleitura.com'
+                      href='mailto:luancalasans.site@gmail.com'
                       className='text-bible-accent hover:underline'
                     >
-                      contato@gracaeleitura.com
+                      luancalasans.site@gmail.com
                     </a>
                   </p>
                   <p className='text-bible-text'>
